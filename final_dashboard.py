@@ -110,7 +110,7 @@ def generate_table(dataframe, max_rows=50):
     ])
 
 app = dash.Dash(__name__, external_stylesheets=stylesheet)
-
+server = app.server
 #Graph
 fig = px.bar(df, x='City', y='Result', color = 'Description')
 #fig.show()
